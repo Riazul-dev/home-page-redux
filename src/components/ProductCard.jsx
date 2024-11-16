@@ -1,8 +1,10 @@
 import React from "react";
 import Container from "./Container";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 function ProductCard({ name, img, price, soldOutPrice, reviews, star }) {
+  const navigate = useNavigate();
   return (
     <Container className="space-y-3">
       <div className="w-full h-[200px] bg-white/25 border-2 border-white/30 rounded-t-xl inline-flex justify-center items-center overflow-hidden">
@@ -21,6 +23,7 @@ function ProductCard({ name, img, price, soldOutPrice, reviews, star }) {
           </p>
         </div>
         <Button
+          onClick={() => navigate(`/productPage/${name}`)}
           type="submit"
           className="bg-[#A61473] hover:bg-[#ff20b1] duration-300 w-[85px] h-[35px] text-sm text-white"
         >

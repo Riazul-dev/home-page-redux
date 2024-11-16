@@ -1,11 +1,12 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function Cart() {
   return (
-    <div className="text-pink-500 text-xl cursor-pointer">
+    <NavLink to="/cartPage" className="text-pink-500 text-xl cursor-pointer">
       <FaShoppingCart />
-    </div>
+    </NavLink>
   );
 }
 
