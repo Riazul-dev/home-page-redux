@@ -1,10 +1,23 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Container from "./Container";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 function ProductCard({ name, img, price, soldOutPrice, reviews, star }) {
   const navigate = useNavigate();
+
+
+  const stars = ()=>{
+    for (let i = star; i < 4; i++) {
+     return i
+      
+    }
+  }
+  stars()
+
+
   return (
     <Container className="space-y-3">
       <div className="w-full h-[200px] bg-white/25 border-2 border-white/30 rounded-t-xl inline-flex justify-center items-center overflow-hidden">

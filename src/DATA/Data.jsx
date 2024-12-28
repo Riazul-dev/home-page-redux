@@ -14,7 +14,7 @@ export const producrs = [
     img: "/images/img_3.png",
     price: 115,
     soldOutPrice: 100,
-    reviews: "(11.6k Reviews)",
+    reviews: "(7.5k Reviews)",
     star: <FaStar />,
   },
   {
@@ -22,7 +22,7 @@ export const producrs = [
     img: "/images/img_4.png",
     price: 50,
     soldOutPrice: 150,
-    reviews: "(11.6k Reviews)",
+    reviews: "(8.6k Reviews)",
     star: <FaStar />,
   },
   {
@@ -30,7 +30,7 @@ export const producrs = [
     img: "/images/img_5.png",
     price: 220,
     soldOutPrice: 210,
-    reviews: "(11.6k Reviews)",
+    reviews: "(10.6k Reviews)",
     star: <FaStar />,
   },
 ];
